@@ -18,11 +18,14 @@ image: img/head.png
 - 塚本真人
 - 株式会社Fusic
 - 普段はRoRでweb開発してます
-- 趣味: ポケモン(対戦)
+- 趣味: ポケモン
 - qiita: https://qiita.com/TsuMakoto
 - github: https://github.com/TsuMakoto
+- jl.devというユーザーグループで管理人しています
+  - https://jldev.connpass.com
+  - Discord: https://discord.gg/NwTE3yg
 
-![bg right:50% height:80%](img/fusic.png)
+ ![bg right:50% height:80%](img/icon.png)
 
 ---
 
@@ -49,6 +52,8 @@ image: img/head.png
 
 # CodingameでゲームAI
 
+![スクリーンショット 2021-05-27 20.38.23.png](img/codingame.png)
+
 ---
 
 # Codingameについて
@@ -64,15 +69,23 @@ image: img/head.png
 3x3のマルバツゲーム
 https://www.codingame.com/multiplayer/bot-programming/tic-tac-toe
 
-Joinから簡単に実装できます。
+![スクリーンショット 2021-05-28 23.23.50.png](:storage/dcc741d4-a1e2-47df-8885-d18f680606cf/5a3cb731.png)
+
+ユーザー登録してしまえば、簡単に始められます。
 
 ---
 
 # 自作コードを動かす
 
-23言語使えるといいましたが、Juliaが使えない！
+---
 
-せっかくなら、Juliaを使いたい
+# 自作コードを動かす
+
+- 23言語使えるといいましたが、Juliaが使えない！
+
+- せっかくなら、Juliaを使いたいよね。
+
+- 難しいことはしてないよ。
 
 ---
 
@@ -81,19 +94,60 @@ Joinから簡単に実装できます。
 
 - github: https://github.com/CodinGame/game-ultimate-tictactoe
 - 実行環境: Java (Maven)
+- [GitHub - TsuMakoto/game-ultimate-tictactoe](https://github.com/TsuMakoto/game-ultimate-tictactoe/tree/master)から`docker-compose up`でもOK
+
+---
+
+# コミット！！
+[game-ultimate-tictactoe/Main.java at master · CodinGame/game-ultimate-tictactoe · GitHub](https://github.com/CodinGame/game-ultimate-tictactoe/blob/master/src/test/java/Main.java)のなかのコードを編集する。
+
+```java
+// ...略
+
+gameRunner.addAgent(Player1.class);
+gameRunner.addAgent(Player2.class);
+// gameRunner.addAgent("python3 /home/user/player.py");
+
+gameRunner.start();
+
+// ...
+```
+---
+
+# コミット！！
+[game-ultimate-tictactoe/Main.java at master · CodinGame/game-ultimate-tictactoe · GitHub](https://github.com/CodinGame/game-ultimate-tictactoe/blob/master/src/test/java/Main.java)のなかのコードを編集する。
+
+```java
+// ...略
+
+gameRunner.addAgent(Player1.class);
+// gameRunner.addAgent(Player2.class);
+gameRunner.addAgent("julia /home/user/player.jl"); // ここで使いたいagentを追加
+
+gameRunner.start();
+
+// ...
+```
+
+---
+
+# 結果
 
 
 ---
 
-# docker
+# 他のゲームもできる
+基本、 `src/test/java/Main.java` のファイルを編集すればできます。
 
-
-# コミット！！
 
 ---
 
 # 競いましょう！
 
+- いつかjl.devで、イベントとしてやるかもしれません
+- 戦略やアルゴリズムに興味ある方、Juliaを学んでみたい方参加待ってます。
+
 ---
 
 # ありがとうございました
+
