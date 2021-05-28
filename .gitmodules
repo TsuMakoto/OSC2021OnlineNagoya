@@ -1,0 +1,3 @@
+[submodule "game-ultimate-tictactoe"]
+	path = game-ultimate-tictactoe
+	url = git@github.com:TsuMakoto/game-ultimate-tictactoe.git
