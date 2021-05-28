@@ -52,7 +52,7 @@ image: img/head.png
 
 # CodingameでゲームAI
 
-![スクリーンショット 2021-05-27 20.38.23.png](img/codingame.png)
+![bg width:550px](img/codingame.png)
 
 ---
 
@@ -69,7 +69,7 @@ image: img/head.png
 3x3のマルバツゲーム
 https://www.codingame.com/multiplayer/bot-programming/tic-tac-toe
 
-![スクリーンショット 2021-05-28 23.23.50.png](:storage/dcc741d4-a1e2-47df-8885-d18f680606cf/5a3cb731.png)
+![width:600px](img/tictactoe.png)
 
 ユーザー登録してしまえば、簡単に始められます。
 
@@ -131,7 +131,31 @@ gameRunner.start();
 
 ---
 
+# コミット!!
+
+```
+module Turn
+
+function start(grid::Matrix{Int})
+  opponentrow, opponentcol = parse.(Int, readline() |> split)
+
+  if (opponentrow, opponentcol) != (-1, -1)
+    grid[opponentrow + 1, opponentcol + 1] = 2
+  end
+
+  valid_action_count = parse.(Int, readline())
+  actions = map(1:valid_action_count) do i
+    parse.(Int, readline() |> split)
+  end
+
+  # ...略
+```
+
+---
+
 # 結果
+
+![bg width:50%](img/tictoctoe.gif)
 
 
 ---
@@ -144,7 +168,8 @@ gameRunner.start();
 
 # 競いましょう！
 
-- いつかjl.devで、イベントとしてやるかもしれません
+- いつかjl.devで、イベントとしてやるかもしれません。
+  - コード提出のフォームは頑張って作ります。
 - 戦略やアルゴリズムに興味ある方、Juliaを学んでみたい方参加待ってます。
 
 ---
