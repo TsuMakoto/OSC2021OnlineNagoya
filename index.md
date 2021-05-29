@@ -25,7 +25,7 @@ image: img/head.png
   - https://jldev.connpass.com
   - Discord: https://discord.gg/NwTE3yg
 
- ![bg right:50% height:80%](img/icon.png)
+ ![bg right:50% width:80%](img/jldev.png)
 
 ---
 
@@ -133,6 +133,8 @@ gameRunner.start();
 
 # コミット!!
 
+https://github.com/TsuMakoto/game-ultimate-tictactoe/blob/master/src/test/julia/player.jl
+
 ```
 module Turn
 
@@ -148,7 +150,7 @@ function start(grid::Matrix{Int})
     parse.(Int, readline() |> split)
   end
 
-  # ...略
+  # AI作成...
 ```
 
 ---
@@ -163,6 +165,8 @@ function start(grid::Matrix{Int})
 # 他のゲームもできる
 基本、 `src/test/java/Main.java` のファイルを編集すればできます。
 
+![width:600px](img/hyper.png)
+
 
 ---
 
@@ -175,4 +179,9 @@ function start(grid::Matrix{Int})
 ---
 
 # ありがとうございました
+
+リポジトリ
+
+- 発表資料:   https://github.com/TsuMakoto/OSC2021OnlineNagoya
+- デモコード: https://github.com/TsuMakoto/game-ultimate-tictactoe
 
